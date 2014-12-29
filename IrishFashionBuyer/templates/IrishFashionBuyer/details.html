@@ -1,0 +1,8 @@
+<form action="{% url 'fashion:add' order.get.order_number %}" method="post">
+    {% csrf_token %}
+    {% for order in details %}
+        <input type="radio" name="detail" id="detail{{ forloop.counter }}" value="{{ order.order_number }}"/>
+        <label for="OrderDetail{{ forloop.counter }}">{{ order.order_number }}</label><br />
+    {% endfor %}
+<input type="submit" value="add"/>
+</form>

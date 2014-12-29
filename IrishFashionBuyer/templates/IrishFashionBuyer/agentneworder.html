@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/static/css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/font1.css" rel="stylesheet" type="text/css">
+    <link href='/static/css/font2.css' rel='stylesheet' type='text/css'>
+    <link href='/static/css/font3.css' rel='stylesheet' type='text/css'>
+    <link href='/static/css/font4.css' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Irish Buyer</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#neworder">New Order</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'fashion:agent_order'  %}">Return</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome {{ user }}!</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="neworder">
+        <div class="container">
+
+
+            <div class="row clearfix">
+		    <div class="col-md-12 column">
+            <form action="{% url 'fashion:add_new_order'%}" method="post">
+                {% csrf_token %}
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Items</h2>
+                    </div>
+                </div>
+                <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-left btn btn-default">Delete Row</a>
+                <hr/>
+                <table class="table table-bordered table-hover" id="tab_logic">
+				    <thead>
+					    <tr >
+						    <th class="text-center">
+							    #
+						    </th>
+                            <th class="text-center">
+							    Name
+						    </th>
+						    <th class="text-center">
+							    Price
+						    </th>
+						    <th class="text-center">
+							    Quantity
+						    </th>
+					    </tr>
+				    </thead>
+                    <tbody>
+					    <tr id='addr0'>
+						    <td>
+						        1
+						    </td>
+						    <td>
+						        <input type="text" name='name0'  placeholder='Name' class="form-control" required="true"/>
+						    </td>
+						    <td>
+						        <input type="text" name='price0' placeholder='Price' class="form-control price" required="true"/>
+						    </td>
+                            <td>
+						        <input type="text" name='quantity0' placeholder='Quantity' class="form-control quantity" required="true"/>
+						    </td>
+					    </tr>
+                        <tr id='addr1'></tr>
+
+				    </tbody>
+
+                </table>
+                 <label class="page-scroll">Total Price:</label>
+                {{ form.total_price.errors }}
+                {{ form.total_price }}
+                <br/>
+                <label class="page-scroll">Delivery Address:</label>
+                {{ form.delivery_address.errors }}
+                {{ form.delivery_address }}
+                <br/>
+                <label class="page-scroll">Comments:</label>
+                {{ form.comments.errors }}
+                {{ form.comments }}
+                <br/>
+                <input class="btn btn-primary pull-left" type="submit" value="Submit" />
+            </form>
+		    </div>
+	        </div>
+            </div>
+
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="/static/img/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="/static/img/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="/static/img/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="/static/img/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/js/jquery.easing.min.js"></script>
+    <script src="/static/js/classie.js"></script>
+    <script src="/static/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/static/js/agency.js"></script>
+
+<script>
+     $(document).ready(function(){
+      var i=1;
+
+     $("#page-top").click(function(){
+         var prices = document.getElementsByClassName("price")
+         var quantities = document.getElementsByClassName("quantity")
+         var len = prices.length
+         var sum = 0
+         for(i=0;i<len;i++){
+            sum = sum + prices[i].value*quantities[i].value
+         }
+         var totalinput = document.getElementById("totalprice")
+         totalinput.value = sum
+     });
+
+     $("#add_row").click(function(){
+      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text' placeholder='Name' required='true' class='form-control input-md'  /> </td><td><input  name='price"+i+"' type='text' placeholder='Price'  required='true' class='form-control input-md price'></td><td><input  name='quantity"+i+"' type='text' placeholder='Quantity'  required='true' class='form-control input-md quantity'></td>");
+
+      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+      i++;
+      records[0].name='test'
+     });
+     $("#delete_row").click(function(){
+    	 if(i>1){
+		 $("#addr"+(i-1)).html('');
+		 i--;
+		 }
+	 });
+
+     });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
