@@ -8,6 +8,8 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^IrishFashionBuyer/', include('IrishFashionBuyer.urls', namespace="fashion")),
+    url(r'^', include('IrishFashionBuyer.urls', namespace="fashion")),
+
 
 
 
