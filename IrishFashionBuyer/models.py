@@ -12,7 +12,7 @@ class Order(models.Model):
     total_price = models.CharField(max_length=200,default='0')
     delivery_address = models.CharField(max_length=500,default='Test')
     delivery_number = models.CharField(max_length=500,default='Not available')
-    order_paid = models.BooleanField()
+    order_paid = models.BooleanField(default=None)
     order_user = models.ForeignKey(User)
     order_comments = models.CharField(blank=True,max_length=2000,default='No Comments')
 
