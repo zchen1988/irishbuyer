@@ -26,7 +26,7 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="12" selection-start="369" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="6" column="12" selection-start="369" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -35,43 +35,25 @@
       <file leaf-file-name="agentneworder.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentneworder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="80" selection-start="2630" selection-end="2641" vertical-scroll-proportion="-3.6" vertical-offset="765" max-vertical-offset="4155">
+            <state line="63" column="80" selection-start="2630" selection-end="2641" vertical-scroll-proportion="-7.5" vertical-offset="765" max-vertical-offset="4155">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="agency.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/css/agency.css">
+      <file leaf-file-name="agency.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/css/agency.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="277" column="20" selection-start="5491" selection-end="5491" vertical-scroll-proportion="0.0" vertical-offset="10077" max-vertical-offset="13080">
+            <state line="267" column="51" selection-start="5247" selection-end="5247" vertical-scroll-proportion="0.46280992" vertical-offset="3837" max-vertical-offset="13080">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landing-page.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/css/landing-page.css">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="49" selection-start="741" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2640">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="301" selection-end="301" vertical-scroll-proportion="0.33222592" vertical-offset="80" max-vertical-offset="10215">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signin.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/css/signin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="329" selection-end="330" vertical-scroll-proportion="-10.961538" vertical-offset="0" max-vertical-offset="690">
+            <state line="14" column="49" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="495">
               <folding />
             </state>
           </provider>
@@ -80,28 +62,35 @@
       <file leaf-file-name="agentlogin.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentlogin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="58" selection-start="2488" selection-end="2488" vertical-scroll-proportion="-1.8" vertical-offset="795" max-vertical-offset="2790">
+            <state line="59" column="58" selection-start="2488" selection-end="2488" vertical-scroll-proportion="-32.5" vertical-offset="105" max-vertical-offset="2790">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="agentorderpage.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentorderpage.html">
+      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IrishBuyer/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="20" selection-start="2640" selection-end="2640" vertical-scroll-proportion="-5.5416665" vertical-offset="812" max-vertical-offset="3555">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/urls.py">
+      <file leaf-file-name="0001_initial.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/migrations/0001_initial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="40" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/css/signin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="329" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="690">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +98,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IrishBuyer/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="28" selection-start="288" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+            <state line="10" column="11" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
@@ -127,26 +116,27 @@
       <list>
         <option value="$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/details.html" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/admin.py" />
-        <option value="$PROJECT_DIR$/IrishBuyer/urls.py" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/static/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/static/css/signin.css" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/static/css/landing-page.css" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/urls.py" />
         <option value="$PROJECT_DIR$/IrishBuyer/settings.py" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/forms.py" />
-        <option value="$PROJECT_DIR$/IrishFashionBuyer/models.py" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/static/css/agency.css" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentlogin.html" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentneworder.html" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/views.py" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentorderpage.html" />
+        <option value="$PROJECT_DIR$/IrishFashionBuyer/models.py" />
+        <option value="$PROJECT_DIR$/IrishBuyer/urls.py" />
         <option value="$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/index.html" />
+        <option value="$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/css/agency.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="27" />
+    <option name="x" value="16" />
+    <option name="y" value="49" />
     <option name="width" value="1260" />
     <option name="height" value="700" />
   </component>
@@ -223,7 +213,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -252,7 +242,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/PyDev/hellodjango" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -261,7 +251,11 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/IrishFashionBuyer/static/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer" />
       <recent name="$PROJECT_DIR$/IrishFashionBuyer/static/css" />
     </key>
   </component>
@@ -479,16 +473,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="27" width="1260" height="700" extended-state="0" />
-    <editor active="false" />
+    <frame x="16" y="49" width="1260" height="700" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26929393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31967214" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27750412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31907895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -524,20 +518,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="416" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IrishBuyer/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="27" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135" />
@@ -550,23 +530,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="930">
-          <folding />
-        </state>
+        <state line="50" column="0" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="930" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="75" selection-start="62" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="0" column="75" selection-start="62" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="671" column="10" selection-start="34835" selection-end="34934" vertical-scroll-proportion="0.0" vertical-offset="9888" max-vertical-offset="10275">
-          <folding />
-        </state>
+        <state line="671" column="10" selection-start="34835" selection-end="34934" vertical-scroll-proportion="0.0" vertical-offset="9888" max-vertical-offset="10275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentlogin.html">
@@ -583,7 +557,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/css/landing-page.css">
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/css/landing-page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="13" selection-start="465" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="388" max-vertical-offset="2625">
           <folding />
@@ -593,9 +567,7 @@
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="61" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="210">
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -625,31 +597,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="420">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="44" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="0" column="44" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="604" column="82" selection-start="31492" selection-end="31492" vertical-scroll-proportion="0.0" vertical-offset="8913" max-vertical-offset="10230">
-          <folding />
-        </state>
+        <state line="604" column="82" selection-start="31492" selection-end="31492" vertical-scroll-proportion="0.0" vertical-offset="8913" max-vertical-offset="10230" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="61" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,28 +638,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="59" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="420">
-          <folding />
-        </state>
+        <state line="14" column="59" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="82" selection-start="122" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IrishBuyer/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="358" />
+        <state line="2" column="82" selection-start="122" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="210" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/__init__.py">
@@ -733,49 +686,31 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="358" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/js/agency.js">
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/js/agency.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.47619048" vertical-offset="150" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="13" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.33240998" vertical-offset="1065" max-vertical-offset="3960">
-          <folding />
-        </state>
+        <state line="96" column="13" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.33240998" vertical-offset="1065" max-vertical-offset="3960" />
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py">
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="0" selection-start="5477" selection-end="5477" vertical-scroll-proportion="0.0" vertical-offset="2594" max-vertical-offset="5070">
-          <folding />
-        </state>
+        <state line="4" column="36199" selection-start="36364" selection-end="36364" vertical-scroll-proportion="0.17142858" vertical-offset="0" max-vertical-offset="350" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36199" selection-start="36364" selection-end="36364" vertical-scroll-proportion="0.17142858" vertical-offset="0" max-vertical-offset="350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/css/landing-page.css">
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/css/landing-page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="49" selection-start="741" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2640">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IrishBuyer/settings.py">
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/css/signin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="16" selection-start="1808" selection-end="1823" vertical-scroll-proportion="0.7107438" vertical-offset="732" max-vertical-offset="1410">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/css/signin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="329" selection-end="330" vertical-scroll-proportion="-10.961538" vertical-offset="0" max-vertical-offset="690">
+        <state line="19" column="13" selection-start="329" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
@@ -787,76 +722,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="575" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IrishBuyer/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="288" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/css/agency.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="20" selection-start="5491" selection-end="5491" vertical-scroll-proportion="0.0" vertical-offset="10077" max-vertical-offset="13080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="40" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentlogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="58" selection-start="2488" selection-end="2488" vertical-scroll-proportion="-1.8" vertical-offset="795" max-vertical-offset="2790">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentneworder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="80" selection-start="2630" selection-end="2641" vertical-scroll-proportion="-3.6" vertical-offset="765" max-vertical-offset="4155">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="1650">
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="70" column="0" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="1650" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentorderpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="20" selection-start="2640" selection-end="2640" vertical-scroll-proportion="-5.5416665" vertical-offset="812" max-vertical-offset="3555">
+        <state line="63" column="20" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.0" vertical-offset="812" max-vertical-offset="3555">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="57" selection-start="45" selection-end="57" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
+        <state line="0" column="57" selection-start="45" selection-end="57" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishBuyer/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishBuyer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.8-intel.egg/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="0" selection-start="5477" selection-end="5477" vertical-scroll-proportion="0.33333334" vertical-offset="2594" max-vertical-offset="5070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="49" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentlogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="58" selection-start="2488" selection-end="2488" vertical-scroll-proportion="-32.5" vertical-offset="105" max-vertical-offset="2790">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishBuyer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="10" selection-start="2057" selection-end="2114" vertical-scroll-proportion="0.6280992" vertical-offset="1047" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/agentneworder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="80" selection-start="2630" selection-end="2641" vertical-scroll-proportion="-7.5" vertical-offset="765" max-vertical-offset="4155">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/templates/IrishFashionBuyer/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="301" selection-end="301" vertical-scroll-proportion="0.33222592" vertical-offset="80" max-vertical-offset="10215">
+        <state line="155" column="85" selection-start="7093" selection-end="7144" vertical-scroll-proportion="-5.75" vertical-offset="2187" max-vertical-offset="10245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/img/header-bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IrishFashionBuyer/static/IrishFashionBuyer/css/agency.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="51" selection-start="5247" selection-end="5247" vertical-scroll-proportion="0.46280992" vertical-offset="3837" max-vertical-offset="13080">
           <folding />
         </state>
       </provider>

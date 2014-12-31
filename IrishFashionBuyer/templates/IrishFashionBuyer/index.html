@@ -1,4 +1,6 @@
 
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,17 +15,17 @@
     <title>Irish Buyer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'IrishFashionBuyer/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/static/css/agency.css" rel="stylesheet">
+    <link href="{% static 'IrishFashionBuyer/css/agency.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/static/css/font1.css" rel="stylesheet" type="text/css">
-    <link href='/static/css/font2.css' rel='stylesheet' type='text/css'>
-    <link href='/static/css/font3.css' rel='stylesheet' type='text/css'>
-    <link href='/static/css/font4.css' rel='stylesheet' type='text/css'>
+    <link href="{% static 'IrishFashionBuyer/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'IrishFashionBuyer/css/font1.css' %}" rel="stylesheet" type="text/css">
+    <link href='{% static 'IrishFashionBuyer/css/font2.css' %}' rel='stylesheet' type='text/css'>
+    <link href='{% static 'IrishFashionBuyer/css/font3.css' %}' rel='stylesheet' type='text/css'>
+    <link href='{% static 'IrishFashionBuyer/css/font4.css' %}' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -151,7 +153,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/roundicons.png" class="img-responsive" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/roundicons.png' %}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Round Icons</h4>
@@ -165,7 +167,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/startup-framework.png" class="img-responsive" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/startup-framework.png' %}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Startup Framework</h4>
@@ -179,7 +181,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/treehouse.png" class="img-responsive" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/treehouse.png' %}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Treehouse</h4>
@@ -193,7 +195,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/golden.png" class="img-responsive" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/golden.png' %}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Golden</h4>
@@ -207,7 +209,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/escape.png" class="img-responsive" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/escape.png' %}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Escape</h4>
@@ -221,7 +223,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/dreams.png" class="img-responsive" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/dreams.png' %}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Dreams</h4>
@@ -246,7 +248,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="/static/img/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{% static 'IrishFashionBuyer/img/1.png' %}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -260,7 +262,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="/static/img/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{% static 'IrishFashionBuyer/img/2.png' %}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -274,7 +276,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="/static/img/3.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{% static 'IrishFashionBuyer/img/3.png' %}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -288,7 +290,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="/static/img/4.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{% static 'IrishFashionBuyer/img/4.png' %}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -325,7 +327,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="/static/img/team1.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/team1.jpg' %}" class="img-responsive img-circle" alt="">
                         <h4>Kay Garland</h4>
                         <p class="text-muted">Lead Designer</p>
                         <ul class="list-inline social-buttons">
@@ -340,7 +342,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="/static/img/team2.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/team2.jpg' %}" class="img-responsive img-circle" alt="">
                         <h4>Larry Parker</h4>
                         <p class="text-muted">Lead Marketer</p>
                         <ul class="list-inline social-buttons">
@@ -355,7 +357,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="/static/img/team3.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/team3.jpg' %}" class="img-responsive img-circle" alt="">
                         <h4>Diana Pertersen</h4>
                         <p class="text-muted">Lead Developer</p>
                         <ul class="list-inline social-buttons">
@@ -383,22 +385,22 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="/static/img/envato.jpg" class="img-responsive img-centered" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/envato.jpg' %}" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="/static/img/designmodo.jpg" class="img-responsive img-centered" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/designmodo.jpg' %}" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="/static/img/themeforest.jpg" class="img-responsive img-centered" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/themeforest.jpg' %}" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="/static/img/creative-market.jpg" class="img-responsive img-centered" alt="">
+                        <img src="{% static 'IrishFashionBuyer/img/creative-market.jpg' %}" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
             </div>
@@ -496,7 +498,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive" src="/static/img/roundicons-free.png" alt="">
+                            <img class="img-responsive" src="IrishFashionBuyer/img/roundicons-free.png" alt="">
                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                             <p>
                                 <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
@@ -528,7 +530,7 @@
                         <div class="modal-body">
                             <h2>Project Heading</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="/static/img/startup-framework-preview.png" alt="">
+                            <img class="img-responsive img-centered" src="IrishFashionBuyer/img/startup-framework-preview.png" alt="">
                             <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
                             <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -555,7 +557,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="/static/img/treehouse-preview.png" alt="">
+                            <img class="img-responsive img-centered" src="IrishFashionBuyer/img/treehouse-preview.png" alt="">
                             <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
                             <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -582,7 +584,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="/static/img/golden-preview.png" alt="">
+                            <img class="img-responsive img-centered" src="IrishFashionBuyer/img/golden-preview.png" alt="">
                             <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
                             <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -609,7 +611,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="/static/img/escape-preview.png" alt="">
+                            <img class="img-responsive img-centered" src="IrishFashionBuyer/img/escape-preview.png" alt="">
                             <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
                             <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -648,22 +650,22 @@
     </div>
 
     <!-- jQuery -->
-    <script src="/static/js/jquery.js"></script>
+    <script src="{% static 'IrishFashionBuyer/js/jquery.js' %}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="{% static 'IrishFashionBuyer/js/bootstrap.min.js' %}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="/static/js/jquery.easing.min.js"></script>
-    <script src="/static/js/classie.js"></script>
-    <script src="/static/js/cbpAnimatedHeader.js"></script>
+    <script src="{% static 'IrishFashionBuyer/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'IrishFashionBuyer/js/classie.js' %}"></script>
+    <script src="{% static 'IrishFashionBuyer/js/cbpAnimatedHeader.js' %}"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="/static/js/jqBootstrapValidation.js"></script>
-    <script src="/static/js/contact_me.js"></script>
+    <script src="{% static 'IrishFashionBuyer/js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'IrishFashionBuyer/js/contact_me.js' %}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/static/js/agency.js"></script>
+    <script src="{% static 'IrishFashionBuyer/js/agency.js' %}"></script>
 
 </body>
 
