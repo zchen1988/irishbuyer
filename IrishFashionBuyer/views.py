@@ -30,7 +30,10 @@ def auth_login(request):
     if user is not None:
         if user.is_active:
             login(request, user)
-            return HttpResponseRedirect(reverse('fashion:agent_order'))
+            if user.is_superuser:
+                return HttpResponseRedirect(reverse('fashion:admin_order'))
+            else:
+                return HttpResponseRedirect(reverse('fashion:agent_order'))
         else:
             print("not active")
     else:
@@ -54,6 +57,25 @@ def agent_order(request):
 
     context = {'agent':agent,'orderlist':orderlist}
     return render(request,'IrishFashionBuyer/agentorderpage.html',context)
+
+def admin_order(request):
+    admin = request.user
+    if not request.user.is_authenticated():
+        return render(request,'IrishFashionBuyer/agentorderpage.html')
+    orders = Order.objects.all()
+    orderlist = []
+    for order in orders:
+        orderdetails = OrderDetails.objects.filter(order_number=order.order_number)
+        order_dic = {'order_number':order.order_number,'date':order.order_time,'delivery_number':order.delivery_number,'address':order.delivery_address,'items':'','price':order.total_price,'paid':order.order_paid,'comments':order.order_comments}
+        items = ''
+        for orderdetail in orderdetails:
+            items = items + orderdetail.product_name+'*'+str(orderdetail.product_quantity)+'*'+str(orderdetail.product_price)+', '
+        order_dic['items'] = items
+        orderlist.append(order_dic)
+
+    context = {'admin':admin,'orderlist':orderlist}
+    return render(request,'IrishFashionBuyer/adminorderpage.html',context)
+
 
 
 def user_logout(request):
