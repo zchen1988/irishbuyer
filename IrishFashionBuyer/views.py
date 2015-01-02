@@ -5,6 +5,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from IrishFashionBuyer.forms import OrderForm
 from django.utils import timezone
+from django import forms
+
 
 
 # Create your views here.
@@ -26,6 +28,7 @@ def agentlogin(request):
 def auth_login(request):
     username = request.POST['username']
     password = request.POST['password']
+    errorMsg = ''
     user = authenticate(username=username, password=password)
     if user is not None:
         if user.is_active:
@@ -35,9 +38,11 @@ def auth_login(request):
             else:
                 return HttpResponseRedirect(reverse('fashion:agent_order'))
         else:
-            print("not active")
+            errorMsg = "Your account has been deactived, please contact Shiying Duan for details!"
+            return render(request, 'IrishFashionBuyer/agentlogin.html', {'errorMsg': errorMsg,})
     else:
-        print("failed")
+        errorMsg = "Login failed, please check you username and password!"
+        return render(request, 'IrishFashionBuyer/agentlogin.html', {'errorMsg': errorMsg,})
 
 def agent_order(request):
     agent = request.user
@@ -47,7 +52,7 @@ def agent_order(request):
     orders = Order.objects.filter(order_user=request.user)
     orderlist = []
     for order in orders:
-        orderdetails = OrderDetails.objects.filter(order_number=order.order_number)
+        orderdetails = OrderDetails.objects.filter(order=order)
         order_dic = {'order_number':order.order_number,'date':order.order_time,'delivery_number':order.delivery_number,'address':order.delivery_address,'items':'','price':order.total_price,'paid':order.order_paid,'comments':order.order_comments}
         items = ''
         for orderdetail in orderdetails:
@@ -55,7 +60,8 @@ def agent_order(request):
         order_dic['items'] = items
         orderlist.append(order_dic)
 
-    context = {'agent':agent,'orderlist':orderlist}
+    context = {'agent':agent,'orderlist':orderlist,}
+
     return render(request,'IrishFashionBuyer/agentorderpage.html',context)
 
 def admin_order(request):
@@ -65,7 +71,7 @@ def admin_order(request):
     orders = Order.objects.all()
     orderlist = []
     for order in orders:
-        orderdetails = OrderDetails.objects.filter(order_number=order.order_number)
+        orderdetails = OrderDetails.objects.filter(order=order)
         order_dic = {'order_number':order.order_number,'date':order.order_time,'delivery_number':order.delivery_number,'address':order.delivery_address,'items':'','price':order.total_price,'paid':order.order_paid,'comments':order.order_comments}
         items = ''
         for orderdetail in orderdetails:
@@ -113,6 +119,7 @@ def add_new_order(request):
                 price = request.POST.get('price'+str(i))
                 quantity = request.POST.get('quantity'+str(i))
                 order_detail = OrderDetails(order_number=order_num,product_name=name,product_price=price,product_quantity=quantity,order_time=timezone.now())
+                order_detail.order = order
                 order_detail.save()
 
             return HttpResponseRedirect(reverse('fashion:agent_order'))
