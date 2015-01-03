@@ -265,11 +265,12 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(/static/IrishFashionBuyer/img/header-bg.jpg);
+    background-image: url(/static/IrishFashionBuyer/img/header-bg1.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+
     background-size: cover;
     -o-background-size: cover;
 }
