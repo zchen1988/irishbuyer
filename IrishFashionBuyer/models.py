@@ -6,11 +6,11 @@ from django.db import models
 
 class Order(models.Model):
     def __str__(self):
-        return self.order_number
+        return self.order_number+' -> '+str(self.order_time)
     order_number = models.CharField(max_length=500)
     order_time = models.DateTimeField()
     total_price = models.CharField(max_length=200,default='0')
-    delivery_address = models.CharField(max_length=500,default='Test')
+    delivery_address = models.CharField(max_length=500,default='Please insert')
     delivery_number = models.CharField(max_length=500,default='Not available')
     order_paid = models.BooleanField(default=None)
     order_user = models.ForeignKey(User)
@@ -21,6 +21,7 @@ class Order(models.Model):
 class OrderDetails(models.Model):
     def __str__(self):
         return self.order_number+' - '+self.product_name
+    order = models.ForeignKey(Order)
     order_number = models.CharField(max_length=500)
     product_name = models.CharField(max_length=200)
     order_time = models.DateTimeField()

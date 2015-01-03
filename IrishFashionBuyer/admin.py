@@ -5,7 +5,20 @@ from IrishFashionBuyer.models import Order
 
 
 # Register your models here.
-admin.site.register(OrderDetails)
-admin.site.register(Order)
+class OrderDetailsInline(admin.StackedInline):
+    model = OrderDetails
+    extra = 1
+
+class OrderAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None, {'fields':['order_number']}),
+        ('Order Information', {'fields':['order_time','total_price','delivery_address','delivery_number','order_paid','order_user','order_comments']}),
+    ]
+    inlines = [OrderDetailsInline]
+
+admin.site.register(Order, OrderAdmin)
+
+
+
 
 
