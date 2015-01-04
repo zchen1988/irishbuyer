@@ -12,7 +12,7 @@ class OrderDetailsInline(admin.StackedInline):
 class OrderAdmin(admin.ModelAdmin):
     fieldsets = [
         (None, {'fields':['order_number']}),
-        ('Order Information', {'fields':['order_time','total_price','delivery_address','delivery_number','order_paid','order_user','order_comments']}),
+        ('Order Information', {'fields':['order_time','total_price','total_original_price','total_weight','delivery_address','delivery_number','order_paid','order_user','order_comments']}),
     ]
     inlines = [OrderDetailsInline]
 

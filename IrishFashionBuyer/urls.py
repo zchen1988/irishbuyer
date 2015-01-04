@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^admin_order/$', views.admin_order, name='admin_order'),
     url(r'^user_logout/$', views.user_logout, name='user_logout'),
     url(r'^add_new_order/$', views.add_new_order, name='add_new_order'),
+    url(r'^add_new_order_admin/$', views.add_new_order_admin, name='add_new_order_admin'),
 
 
 )
