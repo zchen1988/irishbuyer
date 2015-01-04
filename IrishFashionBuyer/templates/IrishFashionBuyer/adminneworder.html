@@ -62,7 +62,7 @@
                         <a class="page-scroll" href="#neworder">New Order</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{% url 'fashion:agent_order'  %}">Return</a>
+                        <a class="page-scroll" href="{% url 'fashion:admin_order'  %}">Return</a>
                     </li>
 
                 </ul>
@@ -78,6 +78,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome {{ user }}!</div>
+                <div class="intro-lead-in">You're the Administrator!</div>
             </div>
         </div>
     </header>
@@ -88,7 +89,7 @@
 
             <div class="row clearfix">
 		    <div class="col-md-12 column">
-            <form action="{% url 'fashion:add_new_order'%}" method="post">
+            <form action="{% url 'fashion:add_new_order_admin'%}" method="post">
                 {% csrf_token %}
 
                 <div class="row">
@@ -107,14 +108,20 @@
                             <th class="text-center">
 							    Name
 						    </th>
-                            <th class="text-center">
+                             <th class="text-center">
 							    Desc
 						    </th>
 						    <th class="text-center">
 							    Price
 						    </th>
+                            <th class="text-center">
+							    Original Price
+						    </th>
 						    <th class="text-center">
 							    Quantity
+						    </th>
+                            <th class="text-center">
+							    Weight
 						    </th>
 					    </tr>
 				    </thead>
@@ -132,8 +139,14 @@
 						    <td>
 						        <input type="text" name='price0' placeholder='Price' class="form-control price" required="true"/>
 						    </td>
+                             <td>
+						        <input type="text" name='oriprice0' placeholder='Original Price' class="form-control oriprice" required="true"/>
+						    </td>
                             <td>
 						        <input type="text" name='quantity0' placeholder='Quantity' class="form-control quantity" required="true"/>
+						    </td>
+                            <td>
+						        <input type="text" name='weight0' placeholder='Weight' class="form-control weight" required="true"/>
 						    </td>
 					    </tr>
                         <tr id='addr1'></tr>
@@ -141,9 +154,17 @@
 				    </tbody>
 
                 </table>
-                 <label class="page-scroll">Total Price:</label>
+                <label class="page-scroll">Total Price:</label>
                 {{ form.total_price.errors }}
                 {{ form.total_price }}
+                <br/>
+                <label class="page-scroll">Total Original Price:</label>
+                {{ form.total_original_price.errors }}
+                {{ form.total_original_price }}
+                <br/>
+                 <label class="page-scroll">Total Weight:</label>
+                {{ form.total_weight.errors }}
+                {{ form.total_weight }}
                 <br/>
                 <label class="page-scroll">Delivery Address:</label>
                 {{ form.delivery_address.errors }}
@@ -247,12 +268,33 @@
          for(i=0;i<len;i++){
             sum = sum + prices[i].value*quantities[i].value
          }
+
+         var oriprices = document.getElementsByClassName("oriprice")
+         var orilen = oriprices.length
+         var orisum = 0
+         for(i=0;i<len;i++){
+            orisum = orisum + oriprices[i].value*quantities[i].value
+         }
+
+         var weights = document.getElementsByClassName("weight")
+         var weightlen = weights.length
+         var weightsum = 0
+         for(i=0;i<len;i++){
+            weightsum = weightsum + weights[i].value*quantities[i].value
+         }
+
          var totalinput = document.getElementById("totalprice")
          totalinput.value = sum
+
+         var totaloriinput = document.getElementById("totaloriprice")
+         totaloriinput.value = orisum
+
+         var weightinput = document.getElementById("totalweight")
+         weightinput.value = weightsum
      });
 
      $("#add_row").click(function(){
-      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text' placeholder='Name' required='true' class='form-control input-md'  /> </td><td><input name='desc"+i+"' type='text' placeholder='Desc' required='true' class='form-control input-md'  /> </td><td><input  name='price"+i+"' type='text' placeholder='Price'  required='true' class='form-control input-md price'></td><td><input  name='quantity"+i+"' type='text' placeholder='Quantity'  required='true' class='form-control input-md quantity'></td>");
+      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text' placeholder='Name' required='true' class='form-control input-md'  /> </td><td><input name='desc"+i+"' type='text' placeholder='Desc' required='true' class='form-control input-md'  /> </td><td><input  name='price"+i+"' type='text' placeholder='Price'  required='true' class='form-control input-md price'></td><td><input  name='oriprice"+i+"' type='text' placeholder='Original Price'  required='true' class='form-control input-md oriprice'></td><td><input  name='quantity"+i+"' type='text' placeholder='Quantity'  required='true' class='form-control input-md quantity'></td><td><input  name='weight"+i+"' type='text' placeholder='Weight'  required='true' class='form-control input-md weight'></td>");
 
       $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
       i++;

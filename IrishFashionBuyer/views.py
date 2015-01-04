@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from IrishFashionBuyer.models import Order,OrderDetails
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
-from IrishFashionBuyer.forms import OrderForm
+from IrishFashionBuyer.forms import OrderForm, OrderFormAgent
 from django.utils import timezone
 from django import forms
 
@@ -56,7 +56,11 @@ def agent_order(request):
         order_dic = {'order_number':order.order_number,'date':order.order_time,'delivery_number':order.delivery_number,'address':order.delivery_address,'items':'','price':order.total_price,'paid':order.order_paid,'comments':order.order_comments}
         items = ''
         for orderdetail in orderdetails:
-            items = items + orderdetail.product_name+'*'+str(orderdetail.product_quantity)+'*'+str(orderdetail.product_price)+', '
+            desc = orderdetail.product_desc
+            if desc:
+                items = items + orderdetail.product_name+'('+desc+')'+'*'+str(orderdetail.product_quantity)+'*'+str(orderdetail.product_price)+', '
+            else:
+                items = items + orderdetail.product_name+'*'+str(orderdetail.product_quantity)+'*'+str(orderdetail.product_price)+', '
         order_dic['items'] = items
         orderlist.append(order_dic)
 
@@ -75,7 +79,16 @@ def admin_order(request):
         order_dic = {'order_number':order.order_number,'date':order.order_time,'delivery_number':order.delivery_number,'address':order.delivery_address,'items':'','price':order.total_price,'paid':order.order_paid,'comments':order.order_comments}
         items = ''
         for orderdetail in orderdetails:
-            items = items + orderdetail.product_name+'*'+str(orderdetail.product_quantity)+'*'+str(orderdetail.product_price)+', '
+            desc = orderdetail.product_desc
+            if orderdetail.product_purchased:
+                purchased = ' - Purchased'
+            else:
+                purchased = ' - Not Purchased'
+
+            if desc:
+                items = items + orderdetail.product_name+'('+desc+')'+'*'+str(orderdetail.product_quantity)+purchased+', '
+            else:
+                items = items + orderdetail.product_name+'*'+str(orderdetail.product_quantity)+purchased+', '
         order_dic['items'] = items
         orderlist.append(order_dic)
 
@@ -99,7 +112,7 @@ def add_new_order(request):
         return HttpResponseRedirect(reverse('fashion:agentlogin'))
 
     if request.method == 'POST':
-        form = OrderForm(request.POST)
+        form = OrderFormAgent(request.POST)
         if form.is_valid():
             totalPrice = request.POST.get('total_price')
             address = request.POST.get('delivery_address')
@@ -108,25 +121,66 @@ def add_new_order(request):
                 paid = request.POST.get('order_paid')
             else:
                 paid = False
-            order = Order(order_time=timezone.now(),total_price=totalPrice,delivery_address=address,order_paid=paid,order_user=request.user,order_comments=comments)
+            order = Order(order_time=timezone.now(),total_price=totalPrice,delivery_address=address,order_paid=paid,order_user=request.user,order_comments=comments,total_original_price='0',total_weight='0')
             order.save()
             order_num = request.user.__str__()+" - "+str(order.id)
             order.order_number = order_num
             order.save()
-            detailLen = (request.POST.__len__() - 4)/3
+            detailLen = (request.POST.__len__() - 4)/4
             for i in range(detailLen):
                 name = request.POST.get('name'+str(i))
                 price = request.POST.get('price'+str(i))
                 quantity = request.POST.get('quantity'+str(i))
-                order_detail = OrderDetails(order_number=order_num,product_name=name,product_price=price,product_quantity=quantity,order_time=timezone.now())
+                desc = request.POST.get('desc'+str(i))
+                order_detail = OrderDetails(order_number=order_num,product_name=name,product_price=price,product_quantity=quantity,order_time=timezone.now(),product_desc=desc,product_purchased=False,product_weight=0.0,product_original_price='0')
                 order_detail.order = order
                 order_detail.save()
 
             return HttpResponseRedirect(reverse('fashion:agent_order'))
     else:
-        form = OrderForm()
+        form = OrderFormAgent()
 
     return render(request, 'IrishFashionBuyer/agentneworder.html', {'form': form,})
+
+def add_new_order_admin(request):
+
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect(reverse('fashion:agentlogin'))
+
+    if request.method == 'POST':
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            totalPrice = request.POST.get('total_price')
+            totalOriPrice = request.POST.get('total_original_price')
+            totalWeight = request.POST.get('total_weight')
+            address = request.POST.get('delivery_address')
+            comments = request.POST.get('comments')
+            if request.POST.get('order_paid'):
+                paid = request.POST.get('order_paid')
+            else:
+                paid = False
+            order = Order(order_time=timezone.now(),total_price=totalPrice,delivery_address=address,order_paid=paid,order_user=request.user,order_comments=comments,total_original_price=totalOriPrice,total_weight=totalWeight)
+            order.save()
+            order_num = request.user.__str__()+" - "+str(order.id)
+            order.order_number = order_num
+            order.save()
+            detailLen = (request.POST.__len__() - 4)/6
+            for i in range(detailLen):
+                name = request.POST.get('name'+str(i))
+                price = request.POST.get('price'+str(i))
+                oriprice = request.POST.get('oriprice'+str(i))
+                quantity = request.POST.get('quantity'+str(i))
+                weight = request.POST.get('weight'+str(i))
+                desc = request.POST.get('desc'+str(i))
+                order_detail = OrderDetails(order_number=order_num,product_name=name,product_price=price,product_quantity=quantity,order_time=timezone.now(),product_original_price=oriprice,product_desc=desc,product_purchased=False,product_weight=weight)
+                order_detail.order = order
+                order_detail.save()
+
+            return HttpResponseRedirect(reverse('fashion:admin_order'))
+    else:
+        form = OrderForm()
+
+    return render(request, 'IrishFashionBuyer/adminneworder.html', {'form': form,})
 
 
 
