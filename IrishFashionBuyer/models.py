@@ -5,7 +5,7 @@ from django.db import models
 
 
 class Order(models.Model):
-    def __str__(self):
+    def __unicode__(self):
         return self.order_number+' -> '+str(self.order_time)
     order_number = models.CharField(max_length=500)
     order_time = models.DateTimeField()
@@ -21,7 +21,7 @@ class Order(models.Model):
 
 
 class OrderDetails(models.Model):
-    def __str__(self):
+    def __unicode__(self):
         return self.order_number+' - '+self.product_name
     order = models.ForeignKey(Order)
     order_number = models.CharField(max_length=500)
